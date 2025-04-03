@@ -1,0 +1,118 @@
+/* Reset básico e estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #283618;
+    color: #FEFAE0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header nav ul li a {
+    color: #FEFAE0;
+    text-decoration: none;
+}
+
+.header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Sobre */
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.destaque-box {
+    border-left: 3px solid var(--tijolo);
+    background-color: rgba(221, 161, 94, 0.05);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #283618;
+}
+
+.projetos {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.projeto {
+    background-color: #FEFAE0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.projeto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.projeto h3 {
+    font-size: 1.5rem;
+    color: #283618;
+    margin-top: 15px;
+}
+
+.projeto a {
+    text-decoration: none;
+    color: #DDA15E;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #283618;
+    color: #FEFAE0;
+    text-align: center;
+    padding: 10px 0;
+}

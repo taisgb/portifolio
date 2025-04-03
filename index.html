@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taís Bomfim | Desenvolvedora Front-end</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --tijolo: #BC6C25;     /* Cor primária (destaques) */
+            --dourado: #DDA15E;     /* Secundária (botões/hover) */
+            --creme: #FEFAE0;       /* Fundo */
+            --verde-escuro: #283618;/* Textos/cabeçalho */
+            --verde-medio: #606C38; /* Bordas/seções */
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--creme);
+            color: var(--verde-escuro);
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            background-color: var(--verde-escuro);
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--verde-escuro), var(--verde-medio));
+            color: var(--creme);
+            padding: 100px 0;
+        }
+        
+        .btn-primary {
+            background-color: var(--tijolo);
+            border-color: var(--tijolo);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--dourado);
+            border-color: var(--dourado);
+        }
+        
+        .project-card {
+            transition: transform 0.3s;
+            border: none;
+            border-top: 5px solid var(--tijolo);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-top-color: var(--dourado);
+        }
+        
+        .icon-avatar {
+            width: 150px;
+            height: 150px;
+            background-color: var(--tijolo);
+            color: var(--creme);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            margin: 0 auto;
+        }
+        
+        .bg-section {
+            background-color: rgba(221, 161, 94, 0.1);
+        }
+        
+        footer {
+            background-color: var(--verde-escuro);
+            color: var(--creme);
+        }
+        
+        .badge-skill {
+            background-color: var(--verde-medio);
+            color: white;
+        }
+        
+        .contact-item {
+            transition: all 0.3s;
+            border-left: 3px solid transparent;
+        }
+        
+        .contact-item:hover {
+            border-left-color: var(--tijolo);
+            background-color: rgba(188, 108, 37, 0.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">TaísGB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cursos">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container text-center">
+            <div class="icon-avatar mb-4">
+                <i class="bi bi-code-slash"></i>
+            </div>
+            <h1 class="display-4 fw-bold mb-4">Taís GB</h1>
+            <p class="lead mb-4">Desenvolvedora Front-end | Estudante de Sistemas de Informação</p>
+            <a href="#contato" class="btn btn-light btn-lg px-4">Vamos conversar</a>
+        </div>
+    </section>
+
+   <!-- Sobre Mim -->
+<section id="sobre" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Coluna do texto -->
+        <div class="col-lg-6 order-lg-1 order-2">
+          <h2 class="fw-bold mb-4">Sobre Mim</h2>
+          <p class="lead">Estudante de Sistemas de Informação em transição de carreira.</p>
+          <p class="mb-4">Atualmente, estou me dedicando aos estudos em Sistemas da Informação com foco em Desenvolvimento Web</p>
+  
+          <p class="mb-3">Meus projetos refletem minha abordagem:</p>
+          <ul class="list-unstyled mb-4">
+            <li><i class="bi bi-check-circle text-success me-2"></i> Direta ao ponto</li>
+            <li><i class="bi bi-check-circle text-success me-2"></i> Funcional acima de tudo</li>
+            <li><i class="bi bi-check-circle text-success me-2"></i> Feita com atenção aos detalhes</li>
+          </ul>
+  
+          <div class="border-top pt-3 mb-4">
+            <p class="mb-2">Disponível para:</p>
+            <div class="d-flex gap-2">
+              <span class="badge bg-primary">Estágios</span>
+              <span class="badge bg-secondary">Projetos Freela</span>
+              <span class="badge bg-dark">Parcerias</span>
+            </div>
+          </div>
+  
+          <h3 class="mt-4">Habilidades Técnicas</h3>
+          <div class="d-flex flex-wrap gap-2 my-3">
+            <span class="badge badge-skill">HTML5</span>
+            <span class="badge badge-skill">CSS3</span>
+            <span class="badge badge-skill">JavaScript</span>
+            <span class="badge badge-skill">Bootstrap</span>
+            <span class="badge badge-skill">Git</span>
+            <span class="badge badge-skill">GitHub</span>
+            <span class="badge badge-skill">Jira</span>
+            <span class="badge badge-skill">Excel</span>
+          </div>
+        </div>
+  
+
+        <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0 text-lg-end text-center">
+          <div class="icon-avatar d-inline-flex align-items-center justify-content-center"
+               style="background-color: var(--verde-medio); width: 120px; height: 120px; border-radius: 50%;">
+            <i class="bi bi-laptop fs-1 text-light"></i>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+    <!-- Projetos -->
+    <section id="projetos" class="py-5 bg-section">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Meus Projetos</h2>
+            
+            <div class="row g-4">
+                <!-- Projeto Petshop -->
+                <div class="col-md-4">
+                    <div class="card project-card h-100">
+                        <div class="card-img-top p-4 text-center" style="background-color: var(--verde-escuro); color: var(--creme);">
+                            <i class="bi bi-shop-window" style="font-size: 3rem;"></i>
+                            <h4 class="mt-3">Petshop Reino Animal</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Site responsivo para petshop desenvolvido com HTML, CSS, JavaScript e Bootstrap.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-secondary">HTML</span>
+                                <span class="badge bg-secondary">CSS</span>
+                                <span class="badge bg-secondary">JavaScript</span>
+                                <span class="badge bg-secondary">Bootstrap</span>
+                            </div>
+                            <a href="https://reinoanimalecia.netlify.app/" target="_blank" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto Nikel -->
+                <div class="col-md-4">
+                    <div class="card project-card h-100">
+                        <div class="card-img-top p-4 text-center" style="background-color: var(--verde-escuro); color: var(--creme);">
+                            <i class="bi bi-wallet2" style="font-size: 3rem;"></i>
+                            <h4 class="mt-3">Nikel (Growdev)</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Aplicação de controle financeiro desenvolvida com JavaScript como parte do programa Growdev.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-secondary">HTML</span>
+                                <span class="badge bg-secondary">CSS</span>
+                                <span class="badge bg-secondary">JavaScript</span>
+                            </div>
+                            <a href="https://taisgb.github.io/Nikel/" target="_blank" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto Clínica MedLife -->
+                <div class="col-md-4">
+                    <div class="card project-card h-100">
+                        <div class="card-img-top p-4 text-center" style="background-color: var(--verde-escuro); color: var(--creme);">
+                            <i class="bi bi-heart-pulse" style="font-size: 3rem;"></i>
+                            <h4 class="mt-3">Clínica MedLife</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Site institucional para clínica médica com tabelas de horários, galeria e mapa interativo.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-secondary">HTML</span>
+                                <span class="badge bg-secondary">CSS</span>
+                                <span class="badge bg-secondary">Bootstrap</span>
+                                <span class="badge bg-secondary">Responsivo</span>
+                            </div>
+                            <a href="https://taisgb.github.io/clinicalife/" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Projeto Vista Resenha -->
+                <div class="col-md-4">
+                    <div class="card project-card h-100">
+                        <div class="card-img-top p-4 text-center" style="background-color: var(--verde-escuro); color: var(--creme);">
+                            <i class="bi bi-shop-window" style="font-size: 3rem;"></i>
+                            <h4 class="mt-3">Loja Vista Resenha</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Site responsivo para loja virtual com HTML, CSS, JavaScript, FireBase, NodeJs e Bootstrap.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-secondary">HTML</span>
+                                <span class="badge bg-secondary">CSS</span>
+                                <span class="badge bg-secondary">JavaScript</span>
+                                <span class="badge bg-secondary">Bootstrap</span>
+                                <span class="badge bg-secondary">FireBase</span>
+                                <span class="badge bg-secondary">NodeJs</span>
+                            </div>
+                            <a href="/img/vistaresenha.png" target="_blank" class="btn btn-primary">Em andamento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos -->
+    <section id="cursos" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Cursos em Andamento</h2>
+            
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex flex-wrap gap-3 justify-content-center">
+                                <div class="course-item text-center p-3 rounded" style="background-color: rgba(188, 108, 37, 0.1);">
+                                    <i class="bi bi-laptop" style="font-size: 2rem; color: var(--tijolo);"></i>
+                                    <h5 class="mt-2">Desenvolvedor Full Stack</h5>
+                                    <p class="mb-1">DevMedia</p>
+                                    <span class="badge course-badge">Cursando</span>
+                                </div>
+                                
+                                <div class="course-item text-center p-3 rounded" style="background-color: rgba(221, 161, 94, 0.1);">
+                                    <i class="bi bi-code-square" style="font-size: 2rem; color: var(--dourado);"></i>
+                                    <h5 class="mt-2">Bootcamp Java</h5>
+                                    <p class="mb-1">Instituto Matera</p>
+                                    <span class="badge course-badge">Cursando</span>
+                                </div>
+                                
+                                <div class="course-item text-center p-3 rounded" style="background-color: rgba(96, 108, 56, 0.1);">
+                                    <i class="bi bi-window" style="font-size: 2rem; color: var(--verde-medio);"></i>
+                                    <h5 class="mt-2">Desenvolvimento Web Front-end</h5>
+                                    <p class="mb-1">Growdev</p>
+                                    <span class="badge course-badge">Cursando</span>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 text-center">
+                                <p class="mb-0"><small>Atualizado em <span id="current-date"></span></small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5 bg-section">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Contato Profissional</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow" style="border-top: 5px solid var(--tijolo);">
+                        <div class="card-body p-5">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3 class="mb-4">Informações</h3>
+                                    
+                                    <!-- E-mail protegido -->
+                                    <div class="contact-item bg-light p-3 rounded mb-3">
+                                        <i class="bi bi-envelope-fill me-2" style="color: var(--tijolo);"></i>
+                                        <span id="email"></span>
+                                        <button onclick="copyEmail()" class="btn btn-sm btn-outline-secondary ms-2">
+                                            <i class="bi bi-clipboard"></i> Copiar
+                                        </button>
+                                    </div>
+                                    
+                                    <!-- LinkedIn -->
+                                    <div class="contact-item bg-light p-3 rounded mb-3">
+                                        <i class="bi bi-linkedin me-2" style="color: var(--tijolo);"></i>
+                                        <a href="https://linkedin.com/in/taisgb" target="_blank" class="text-decoration-none">
+                                            linkedin.com/in/taisgb
+                                        </a>
+                                    </div>
+
+                                    <!-- WhatsApp -->
+                                    <div class="contact-item bg-light p-3 rounded">
+                                        <i class="bi bi-instagram me-2" style="color: var(--tijolo);"></i>
+                                        <a href="https://instagram.com/taisbomfim" target="_blank" class="text-decoration-none">
+                                            instagram.com/taisbomfim
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <h3 class="mb-4">Envie uma mensagem</h3>
+                                    <form action="https://formsubmit.co/taisfrontend@gmail.com" method="POST">
+                                        <input type="hidden" name="_subject" value="Contato do Portfólio">
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <div class="mb-3">
+                                            <input type="text" name="name" class="form-control" placeholder="Seu nome" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="email" name="email" class="form-control" placeholder="Seu e-mail" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <textarea name="message" class="form-control" rows="4" placeholder="Sua mensagem" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container text-center">
+            <p class="mb-0">© <span id="current-year"></span> Taís GB. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <script>
+        // Proteção contra crawlers de e-mail
+        document.getElementById('email').textContent = 'taisfrontend' + '@' + 'gmail.com';
+        
+        function copyEmail() {
+            const email = 'taisfrontend@gmail.com';
+            navigator.clipboard.writeText(email);
+            alert('E-mail copiado: ' + email);
+        }
+        
+        // Atualiza o ano e data automaticamente
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        const options = { day: 'numeric', month: 'long', year: 'numeric' };
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('pt-BR', options);
+    </script>
+</body>
+</html>
