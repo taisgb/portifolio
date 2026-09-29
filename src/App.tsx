@@ -454,7 +454,6 @@ function Home({
           <div className="hero-kicker">
             <span>DESENVOLVIMENTO</span>
             <span>PRODUTO DIGITAL</span>
-            <span>UX/UI</span>
           </div>
           <Text as="h1">
             Software, interfaces
