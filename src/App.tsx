@@ -14,6 +14,7 @@ import sucesuMobile from "./assets/sucesu-bahia/institucional-mobile.png"
 import sucesuImage from "./assets/sucesu.png"
 import tecnologiaDesktop from "./assets/tecnologia-liga/jogo-desktop.png"
 import tecnologiaMobile from "./assets/tecnologia-liga/jogo-mobile.png"
+import Gpublica from "./assets/gpublica.png"
 
 type Project = {
   id: string
@@ -97,6 +98,7 @@ const projects: Project[] = [
     result:
       "Home do congresso, programação dividida por períodos, filtros por categorias, estrutura de palestrantes, páginas internas e experiência responsiva.",
     tone: "sand",
+    externalUrl: 'https://sucesuba.org.br/congresso2026/',
   },
   {
     id: "alt3ntique",
@@ -138,15 +140,15 @@ const projects: Project[] = [
 ]
 
 const otherWork = [
-  { name: "Elas Merecem", category: "Saúde · Website", year: "2025", image: elasImage },
-  { name: "Clínica Ingrid Guimarães", category: "Saúde · Website", year: "2024", image: clinicaImage },
-  { name: "Recôncavo Engenharia", category: "Engenharia · Website", year: "2024", image: reconcavoImage },
-  { name: "Oxe Milhas e Viagens", category: "Turismo · Website", year: "2025", image: oxeImage },
-  { name: "Mariana Virgínio", category: "Saúde · Website", year: "2025", image: mariImage },
+  { name: "Elas Merecem", category: "Saúde · Website", year: "2025", image: elasImage, url: "https://psicologiademulheres.com/" },
+  { name: "Consultório Ingrid Guimarães", category: "Saúde · Website", year: "2024", image: clinicaImage, url: 'https://www.consultorioingridguimaraes.com.br/' },
+  { name: "Recôncavo Engenharia", category: "Engenharia · Website", year: "2024", image: reconcavoImage, url: 'https://www.reconcavoea.com.br/' },
+  { name: "Oxe Milhas e Viagens", category: "Turismo · Website", year: "2025", image: oxeImage, url: 'https://www.oxemilhaseviagens.com.br/' },
+  { name: "Mariana Virgínio", category: "Saúde · Website", year: "2025", image: mariImage, url: 'https://www.psimarivirginio.com.br/' },
   {
     name: "GPública",
     category: "Corporativo · WordPress Development",
-    image: null,
+    image: Gpublica,
     url: "https://gpublica.com.br/",
     note: "Implementação técnica a partir de design previamente definido",
   },
