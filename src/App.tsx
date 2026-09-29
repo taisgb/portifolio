@@ -14,7 +14,7 @@ import sucesuMobile from "./assets/sucesu-bahia/institucional-mobile.png"
 import sucesuImage from "./assets/sucesu.png"
 import tecnologiaDesktop from "./assets/tecnologia-liga/jogo-desktop.png"
 import tecnologiaMobile from "./assets/tecnologia-liga/jogo-mobile.png"
-import Gpublica from "./assets/gpublica.png"
+import gpublica from "./assets/Gpublica.png"
 
 type Project = {
   id: string
@@ -148,7 +148,7 @@ const otherWork = [
   {
     name: "GPública",
     category: "Corporativo · WordPress Development",
-    image: Gpublica,
+    image: gpublica,
     url: "https://gpublica.com.br/",
     note: "Implementação técnica a partir de design previamente definido",
   },
