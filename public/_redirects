@@ -1,0 +1,3 @@
+# Redirect the entry route before rendering the static page.
+/ /en/ 302! Language=en
+/ /pt/ 302!
